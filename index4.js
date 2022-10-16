@@ -6,7 +6,7 @@ const ctx = canvas.getContext("2d");
 
 const CANVAS_WIDTH = (canvas.width = 500);
 const CANVAS_HEIGHT = (canvas.height = 1000);
-const numberOfEnemies = 10;
+const numberOfEnemies = 50;
 const enemiesArray = [];
 
 let gameFrame = 0;
@@ -14,10 +14,10 @@ let gameFrame = 0;
 class Enemy {
   constructor() {
     this.image = new Image();
-    this.image.src = 'enemies/enemy3.png';
+    this.image.src = 'enemies/enemy4.png';
     this.speed = Math.random() * 4 + 1;
-    this.spriteWidth = 218;
-    this.spriteHeight = 177;
+    this.spriteWidth = 213;
+    this.spriteHeight = 213;
     this.width = this.spriteWidth / 2;
     this.height = this.spriteHeight / 2;
     this.x = Math.random() * (canvas.width - this.width);
